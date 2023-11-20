@@ -23,6 +23,7 @@ y_pred = knn.predict(X_test)
 accuracy = accuracy_score(y_test, y_pred)
 print("Accuracy:", accuracy)
 
+
 In this code, we first import the necessary libraries: load_iris from sklearn.datasets to load the Iris dataset, train_test_split from sklearn.model_selection to split the dataset into training and testing sets, KNeighborsClassifier from sklearn.neighbors to create a K-nearest neighbors classifier, and accuracy_score from sklearn.metrics to calculate the accuracy of the model.
 
 We then load the Iris dataset using load_iris() and split it into training and testing sets using train_test_split(). Next, we create a K-nearest neighbors classifier with KNeighborsClassifier(n_neighbors=3) and train it on the training set using fit(). We then make predictions on the test set using predict() and calculate the accuracy of the model using accuracy_score().
